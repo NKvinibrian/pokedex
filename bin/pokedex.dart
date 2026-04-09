@@ -1,4 +1,19 @@
 import 'package:pokedex/pokedex.dart';
+// =============================================
+// -- Alunos:
+//  VINICIUS MAESTRELLI WIGGERS
+//  VICTOR HUGO PIONTKIEVITZ DA CRUZ
+//  RENAN NAGANO
+//  JOAO PEDRO OSPEDAL DOS SANTOS
+
+// Montamos o código base principalmente durante as aulas, seguindo os conteúdos trabalhados em sala.
+// A maior parte da implementação foi feita por nós nesse contexto.
+// No entanto, utilizamos ferramentas de inteligência artificial como apoio complementar,
+// especialmente para esclarecer dúvidas pontuais,
+// melhorar a organização do código e auxiliar na criação de testes unitários.
+// Esse uso teve como objetivo garantir que a solução atendesse corretamente aos requisitos solicitados na prova,
+// sem substituir o processo de aprendizado e desenvolvimento realizado por nós.
+// =============================================
 
 void main() {
   // =============================================
@@ -291,7 +306,9 @@ void main() {
   squirtle.marcarComoVisto();
   squirtle.marcarComoCapturado();
   squirtle.favoritar();
-  print('Squirtle - Visto: ${squirtle.visto}, Capturado: ${squirtle.capturado}, Favorito: ${squirtle.favorito}');
+  print(
+    'Squirtle - Visto: ${squirtle.visto}, Capturado: ${squirtle.capturado}, Favorito: ${squirtle.favorito}',
+  );
   squirtle.desfavoritar();
   print('Squirtle - Favorito após desfavoritar: ${squirtle.favorito}');
   print('');
@@ -375,7 +392,9 @@ void main() {
   });
 
   print('Média de nível: ${rotomdex.mediaDeNivel().toStringAsFixed(1)}');
-  print('Percentual capturados: ${rotomdex.percentualCapturados().toStringAsFixed(1)}%');
+  print(
+    'Percentual capturados: ${rotomdex.percentualCapturados().toStringAsFixed(1)}%',
+  );
   print('');
 
   // =============================================
@@ -463,7 +482,9 @@ void main() {
   print('--- Estatísticas da Pokédex Final ---');
   print('Total: ${pokedexFinal.totalPokemons()}');
   print('Média de nível: ${pokedexFinal.mediaDeNivel().toStringAsFixed(1)}');
-  print('Percentual capturados: ${pokedexFinal.percentualCapturados().toStringAsFixed(1)}%');
+  print(
+    'Percentual capturados: ${pokedexFinal.percentualCapturados().toStringAsFixed(1)}%',
+  );
   Map<String, int> tiposFinal = pokedexFinal.quantidadePorTipo();
   print('Por tipo:');
   tiposFinal.forEach((tipo, qtd) {
